@@ -61,7 +61,11 @@
             <h2>The Great Adventure</h2>
           </header>
           <section class="card-body">
-            <p>Are you ready to play this awesome game?</p>
+            <p class="font-weight-bold">Are you ready to play this awesome game?</p>
+            <button class="btn btn-dark" id="gameStart">Click Me!</button>
+            <p class="font-weight-light">Click the Button above to begin!</p>
+            <div id="userResults">
+            </div>
           </section>
         </article>
       </main>
@@ -81,6 +85,7 @@
 
     </div>
 
+    <script src="js/script.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -88,3 +93,23 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
+
+<!--
+  -Use the prompt and confirm functions (each at least once) to collect choices from the user (the entire story will take place in dialog boxes, so your body element could actually be empty, apart from the script element to include your JavaScript)
+
+  -Use if, else if, and else to branch the story, based on user choices
+
+  -In at least one branch, there should be at least 3 choices for the user to make
+
+  -Include at least one branch where different things can happen each time with Math.random()
+
+  -Use a logical operator (&& or ||) at least once, where it makes sense
+
+  -Use a truthy or falsy condition in at least one if statement
+
+  -It should be impossible for an error to ever occur when playing your game, including handling for null/undefined where appropriate
+
+  -All string input should be normalized, so that extra whitespace or a letter that's the wrong case will never cause a failed match
+
+  At least one number value is collected and used in a comparison (don't forget to convert it into a number first)
+-->
