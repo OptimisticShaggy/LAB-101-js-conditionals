@@ -6,7 +6,7 @@ gameBtn.addEventListener('click', function () {
 
   let userAge = window.prompt('Could you please tell me your age?').trim()
   userAge = parseInt(userAge)
-  if (userAge === null || userAge === undefined || isNaN(userAge)) {
+  if (userAge === null || isNaN(userAge)) {
     userAge = falseAnswer
   }
 
@@ -20,11 +20,11 @@ gameBtn.addEventListener('click', function () {
   }
 
   let compGame = window.confirm('Are you ready to play a game?')
-  if (compGame === true) {
+  if (compGame) {
     compGame = window.prompt('Please pick a number between 0.1-1.').trim()
     parseInt(compGame)
     const ranNumber = Math.random()
-    if (compGame === undefined || compGame == null || isNaN(compGame)) {
+    if (compGame == null || isNaN(compGame)) {
       compGame = falseAnswer
     } else if (compGame > ranNumber) {
       compGame = 'you beat the computer!'
